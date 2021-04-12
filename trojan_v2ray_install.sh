@@ -1260,12 +1260,12 @@ EOF
     rm -rf ${configWebsitePath}/*
     mkdir -p ${configWebsiteDownloadPath}
 
-    downloadAndUnzip "https://github.com/jinwyp/one_click_script/raw/master/download/website.zip" "${configWebsitePath}" "website.zip"
-    downloadAndUnzip "https://github.com/jinwyp/one_click_script/raw/master/download/trojan_client_all.zip" "${configWebsiteDownloadPath}" "trojan_client_all.zip"
-    #downloadAndUnzip "https://github.com/jinwyp/one_click_script/raw/master/download/trojan-qt5.zip" "${configWebsiteDownloadPath}" "trojan-qt5.zip"
+    downloadAndUnzip "https://github.com/pub-res/ins-xtn/raw/master/download/website.zip" "${configWebsitePath}" "website.zip"
+    downloadAndUnzip "https://github.com/pub-res/ins-xtn/raw/master/download/trojan_client_all.zip" "${configWebsiteDownloadPath}" "trojan_client_all.zip"
+    #downloadAndUnzip "https://github.com/pub-res/ins-xtn/raw/master/download/trojan-qt5.zip" "${configWebsiteDownloadPath}" "trojan-qt5.zip"
     
-    downloadAndUnzip "https://github.com/jinwyp/one_click_script/raw/master/download/v2ray_client_all.zip" "${configWebsiteDownloadPath}" "v2ray_client_all.zip"
-    #wget -P "${configWebsiteDownloadPath}" "https://github.com/jinwyp/one_click_script/raw/master/download/v2ray-android.zip"
+    downloadAndUnzip "https://github.com/pub-res/ins-xtn/raw/master/download/v2ray_client_all.zip" "${configWebsiteDownloadPath}" "v2ray_client_all.zip"
+    #wget -P "${configWebsiteDownloadPath}" "https://github.com/pub-res/ins-xtn/raw/master/download/v2ray-android.zip"
 
     ${sudoCmd} systemctl start nginx.service
 
@@ -1808,7 +1808,7 @@ EOF
     rm -rf ${configTrojanBasePath}/trojan-win-cli-temp
     mkdir -p ${configTrojanBasePath}/trojan-win-cli-temp
 
-    downloadAndUnzip "https://github.com/jinwyp/one_click_script/raw/master/download/trojan-win-cli.zip" "${configTrojanBasePath}" "trojan-win-cli.zip"
+    downloadAndUnzip "https://github.com/pub-res/ins-xtn/raw/master/download/trojan-win-cli.zip" "${configTrojanBasePath}" "trojan-win-cli.zip"
 
     if [ "$isTrojanGo" = "no" ] ; then
         downloadAndUnzip "https://github.com/trojan-gfw/trojan/releases/download/v${versionTrojan}/trojan-${versionTrojan}-win.zip" "${configTrojanBasePath}/trojan-win-cli-temp" "trojan-${versionTrojan}-win.zip"
