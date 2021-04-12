@@ -399,7 +399,7 @@ function setLinuxDateZone(){
 
 
 function installBBR(){
-    wget -O tcp_old.sh -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp_old.sh && ./tcp_old.sh
+    wget -O tcp_old.sh -N --no-check-certificate "https://raw.githubusercontent.com/pub-res/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp_old.sh && ./tcp_old.sh
 }
 
 function installBBR2(){

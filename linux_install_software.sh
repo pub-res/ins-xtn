@@ -286,7 +286,7 @@ function setLinuxDateZone(){
 
 # 安装 BBR 加速网络软件
 function installBBR(){
-    wget -O tcp_old.sh -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp_old.sh && ./tcp_old.sh
+    wget -O tcp_old.sh -N --no-check-certificate "https://raw.githubusercontent.com/pub-res/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp_old.sh && ./tcp_old.sh
 }
 
 function installBBR2(){
